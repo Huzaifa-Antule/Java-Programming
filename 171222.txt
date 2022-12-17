@@ -1,0 +1,74 @@
+17/12/22 Sat 9:00 AM To 11:00 AM
+
+SELECT * FROM HR.Employees
+SELECT SUM(Salary) FROM HR.Employees
+SELECT COUNT(*) FROM HR.Employees
+SELECT AVG(Salary) FROM HR.Employees
+
+SELECT SUM(Salary),MIN(Salary),MAX(Salary),AVG(Salary),COUNT(*) FROM HR.Employees
+
+SELECT SUM(Salary),MIN(Salary),MAX(Salary),AVG(Salary),COUNT(*) "No of Emp" FROM HR.Employees
+
+SELECT COUNT(*) FROM HR.Employees
+WHERE Department_Id=90
+
+SELECT SUM(Salary),MIN(Salary),MAX(Salary),AVG(Salary),COUNT(*) FROM HR.Employees
+WHERE Department_Id=90
+
+SELECT Department_Id,SUM(Salary),MIN(Salary),MAX(Salary),AVG(Salary),COUNT(*) FROM HR.Employees
+GROUP BY Department_Id
+ORDER BY Department_Id 
+
+
+SELECT Department_Id,SUM(Salary),MIN(Salary),MAX(Salary),AVG(Salary),COUNT(*) FROM HR.Employees
+GROUP BY Department_Id
+ORDER BY 1
+
+
+SELECT Department_Id,SUM(Salary),MIN(Salary),MAX(Salary),AVG(Salary),COUNT(*) FROM HR.Employees
+GROUP BY Department_Id
+ORDER BY Department_Id DESC
+
+CREATE(Half)
+INSERT
+SELECT
+FILTER WHERE
+CONDITION
+Math Op
+Logical
+Aggrigate
+GROUP BY
+ORDER BY
+INBUILD FUNCTION (STRING,NUMBER)
+DATE CONVERSION FUNCTION(TO_CHAR)
+
+
+DATE FORMAT
+'DD-MON-YY'
+SELECT HIRE_DATE,TO_CHAR(HIRE_DATE,'YYYY')"Hiring Year" FROM HR.Employees
+
+SELECT First_Name,HIRE_DATE,TO_CHAR(HIRE_DATE,'YYYY')"Hiring Year",TO_CHAR(HIRE_DATE,'MONTH')"Hiring MONTH" ,TO_CHAR(HIRE_DATE,'W')"Hiring Week",TO_CHAR(HIRE_DATE,'DAY')"Hiring DAY"FROM HR.Employees
+
+SELECT First_Name,Hire_Date FROM HR.Employees
+WHERE TO_CHAR(Hire_Date,'DAY')="SUNDAY"
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
